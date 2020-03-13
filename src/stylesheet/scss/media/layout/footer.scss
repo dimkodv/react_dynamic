@@ -1,0 +1,42 @@
+// site properties
+@import '../../abstracts/variables';
+// mixins
+@import '../../abstracts/mixins';
+
+@media screen and (max-width:767px) {
+
+    .footer {
+
+        &-wg {
+            padding: 36px 0;
+            & > .wrapper-main {
+                grid-template-columns: 1fr;
+            }
+        }
+        &__left {
+            justify-content: center;
+            & span {
+                font-size: 18px;
+                margin-right: 12px;
+            }
+            &-fb {
+                width: 15px;
+                height: 28px;
+            }
+        }
+        &__right {
+            align-items: center;
+            justify-content: center;
+            padding-top: 18px;
+            & .doris {
+                & svg {
+                    max-width: 120px;
+                    height: initial;
+                }
+            }
+        }
+
+
+    }
+
+}

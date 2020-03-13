@@ -1,0 +1,72 @@
+// site properties
+@import '../abstracts/variables';
+// mixins
+@import '../abstracts/mixins';
+
+
+.footer {
+
+    &-wg {
+        background: #0E3D4B;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        padding: 7px 0;
+        //min-height: 384px;
+        & > .wrapper-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__left {
+        text-align: left;
+        font-size: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        & span {
+            font-size: 18px;
+            font-family: "MyriadProLight";
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+        &-fb {
+            display: inline-block;
+            vertical-align: middle;
+            width: 15px;
+            height: 28px;
+            & svg {
+                &:hover path {
+                    fill: $primary-yellow;
+                }
+                & path {
+                    fill: white;
+                    transition: all 0.35s ease;
+                }
+
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        & svg {
+            display:block;
+            height: 38px;
+            &:hover path {
+                fill: $primary-yellow;
+            }
+            & path {
+                fill: #889ea5;
+                transition: all 0.35s ease;
+            }
+
+        }
+    }
+
+
+}
+
+@import '../media/layout/footer.scss';

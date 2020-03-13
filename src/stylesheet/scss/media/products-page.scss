@@ -1,0 +1,206 @@
+// site properties
+@import '../abstracts/variables';
+// mixins
+@import '../abstracts/mixins';
+
+
+@media screen and (max-width:1026px) {
+    .safari .section-products .products-wrap__filter-item {
+        padding: 2px 22px 0 22px;
+    }
+    .section-products {
+        padding-top: 35px;
+        padding-bottom: 58px;
+        & .products-wrap {
+            grid-template-columns: 100%;
+            grid-gap: 7px;
+            padding-top: 52px;
+            &__left {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 7px;
+            }
+            &__filter-list
+            {
+                display: contents;
+            }
+            &__filter-item {
+                padding: 0 22px;
+                margin-bottom: 0;
+                & span,
+                & a
+                {
+                    font-size: 18px;
+                }
+            }
+            &__new {
+                &-label {
+                    font-size: 18px;
+                    padding: 5px 10px;
+                }
+            }
+            &__new-label {
+
+            }
+            &__calculation {
+                padding: 16px 0 16px 19px;
+                & span {
+                    margin-left: 13px;
+                    font-size: 18px;
+                }
+            }
+            &__catalog {
+                display: flex;
+                & span {
+
+                }
+            }
+            &__list {
+                grid-template-columns: 1fr 1fr;
+                grid-gap:7px;
+            }
+            &__item {
+                height: 360px;
+                &-inner {
+
+                }
+                &-title {
+                    font-size: 22px;
+                }
+                &-new {
+
+                }
+                &-image {
+                    margin-top: 25px;
+                    & img {
+                        max-height: 152px;
+                    }
+                }
+                &-mass {
+
+                    &:before {
+                        bottom: 6px;
+                        width: 11px;
+                        height: 11px;
+                    }
+                    & span {
+                        font-size: 24px;
+                    }
+                }
+                &-front {
+                    pointer-events: none;
+                }
+                &-hover {
+
+                }
+                &-description {
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
+                &-view {
+                    bottom: 57px;
+                    font-size: 15px;
+                    padding: 16px 0;
+                    width: 87%;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .safari .section-products .products-wrap__filter-item {
+
+    }
+    .section-products {
+        padding-top: 36px;
+        & .products-wrap {
+            padding-top: 35px;
+            &__left {
+                grid-template-columns: 1fr;
+            }
+            &__filter-list
+            {
+
+            }
+            &__filter-item {
+
+                & span,
+                & a
+                {
+
+                }
+            }
+            &__new {
+                &-label {
+
+                }
+            }
+            &__new-label {
+
+            }
+            &__calculation {
+
+                & span {
+
+                }
+            }
+            &__catalog {
+
+                & span {
+
+                }
+            }
+            &__list {
+                grid-template-columns: 1fr;
+                grid-gap:7px;
+            }
+            &__item {
+                height: 320px;
+                &-inner {
+
+                }
+                &-title {
+                    font-size: 18px;
+                }
+                &-new {
+
+                }
+                &-image {
+                    margin-top: 12px;
+                    & img {
+                        max-height: 133px;
+                    }
+                }
+                &-mass {
+                    font-size: 14px;
+                    padding-top: 12px;
+                    &:before {
+                        bottom: 5px;
+                        width: 10px;
+                        height: 10px;
+                    }
+                    & span {
+
+                    }
+                }
+                &-front {
+                    pointer-events: none;
+                }
+                &-hover {
+
+                }
+                &-description {
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
+                &-view {
+                    bottom: 48px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+}

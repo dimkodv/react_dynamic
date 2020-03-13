@@ -1,0 +1,16 @@
+// site properties
+@import '../abstracts/variables';
+// mixins
+@import '../abstracts/mixins';
+
+
+body {
+    font-family: "MyriadProLight", sans-serif;
+    background-color: #58b058;
+}
+
+.dyn {
+    background-color: gray;
+}
+
+@import '../media/products-page.scss';

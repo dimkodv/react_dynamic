@@ -1,0 +1,11 @@
+// site properties
+@import '../abstracts/variables';
+// mixins
+@import '../abstracts/mixins';
+
+
+.dyn {
+    background-color: orangered;
+}
+
+@import '../media/products-page.scss';
